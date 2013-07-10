@@ -8,6 +8,7 @@ app.get('/', function(request, response) {
     if (err) throw err;
     var buffer = new Buffer(data);
     response.send(buffer.toString());
+  });
 });
 
 var port = process.env.PORT || 5000;
